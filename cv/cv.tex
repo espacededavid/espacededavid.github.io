@@ -1,0 +1,213 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Create a new command for changeable footer text
+\newcommand{\footertext}{Last Modified: \today}
+\fancyfoot[C]{\footertext} % Center footer
+\fancyfoot[R]{Page \thepage} % Right footer - page number
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSingleLineSubheading}[4]{
+  \vspace{-2pt}\item
+    \textbf{#1} \hfill \textit{\small #2} \hfill \textit{\small #3} \hfill \textit{\small #4} \vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{center}
+    \textbf{\Huge \scshape Youyou Guo} \\[1ex] % The name
+    \texttt{toronja.guo@mail.utoronto.ca} % The email
+\end{center}
+%-----------EDUCATION-----------
+\section{education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Toronto}{}
+      {Computer Science Specialist, Statistics Major}{2024.09 - 2028.09}
+    \resumeItemListStart
+        \resumeItem{GPA: 4.0 / 4.0}
+        \resumeItem{\textbf{International Merit Admission Award}, 50,000 CAD}
+        \resumeItem{Relevant courses: CSC110 (A$^+$), CSC111(A), STA130(A$^+$)}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-----------competition-----------
+\section{competition project}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {International Quant Championship}{}
+      {WorldQuant BRAIN}{2025.03 - 2025.08}
+      \resumeItemListStart
+        \resumeItem{Developed a python program to \textbf{automatically form and submit} alphas}
+        \resumeItem{Achieved \textbf{top 20 \% globally} in stage one}
+        \resumeItem{Worked as a team of two}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {COMAP Mathematical Contest in Modeling (MCM) 2025}{successful participant}
+      {Optimizing 2028 Olympic Games Predictions Using Advanced Machine Learning Techniques}{2025.01}
+      \resumeItemListStart
+        \resumeItem{Developed a mathematical model to \textbf{predict Olympic medals} for 2028}
+        \resumeItem{Applied \textbf{random forest} and \textbf{neural networks}}
+        \resumeItem{Presented findings in a 24 page \textbf{formal research paper}}
+        \resumeItem{Worked as a team of three}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  %-----------course project-----------
+\section{course project}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {STA130 Introduction to Data Science}{A$^+$}
+      {Maximizing Client Participation in WellSpring}{2025.03 - 2025.04}
+      \resumeItemListStart
+        \resumeItem{Utilized decision trees to develop \textbf{personalized advertising models}}
+        \resumeItem{Delivered multiple \textbf{oral presentations} to large audiences}
+        \resumeItem{\textbf{Led} a team of four}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {CSC111 Foundations of Computer Science II}{A}
+      {Banking Fraud Detection using Graph Theory}{2025.02 - 2025.03}
+      \resumeItemListStart
+        \resumeItem{Applied classification methods to \textbf{detect fraudulent transactions}}
+        \resumeItem{Utilized Python and the \texttt{Plotly} library to create an \textbf{interactive graph}}
+        \resumeItem{Worked as a team of four}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+%-----------volunteering-----------
+\section{volunteer}
+  \resumeSubHeadingListStart
+
+    \resumeSingleLineSubheading
+    {MAT223 Volunteer Peer Mentor}{}{}{2025.05 - 2025.06}
+  \resumeItemListStart
+    \resumeItem{Supported students' academic success by answering student questions during office hours and lectures}
+  \resumeItemListEnd
+  
+    \resumeSingleLineSubheading
+    {MAT224 Volunteer Notetaker}{}{}{2025.01 -- 2025.03}
+  \resumeItemListStart
+    \resumeItem{Supported students with disabilities by delivering and uploading comprehensive notes}
+  \resumeItemListEnd
+  
+  \resumeSubheading
+      {Reading for the blind}{}
+      {Volunteer program aimed at helping blind people}{2019.12 - 2021.06}
+      \resumeItemListStart
+        \resumeItem{\textbf{Recruited and led} a group of up to 200 people}
+        \resumeItem{Managed 3 classic audiobooks and multiple short stories on the internet for \textbf{general access}}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+%-----------skill-----------
+\section{skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \vspace{1mm}
+     \textbf{Technical}{: python, R, Git, HTML, CSS, java, office suite, swift} \\
+     \vspace{1mm}
+     \textbf{Finance}{: AMAC level I} \\
+     \vspace{1mm}
+     \textbf{Sports}{: taekwondo (10 years)} \\
+     \vspace{1mm}
+    }}
+ \end{itemize}
+\end{document}

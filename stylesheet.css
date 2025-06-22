@@ -1,0 +1,73 @@
+header {
+    /* background-color: #d4c4a8; */
+    /* color: #0f2c1a; */
+    color: #000000;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    align-items: left;
+    margin-bottom: 10px;
+    border: solid 1px #0f2c1a;
+}
+nav {
+    margin-left: 40px;
+    display: flex;
+    gap: 20px;
+}
+header a {
+    /* color: #0f2c1a; */
+    color: #000000;
+    text-decoration: none;
+    font-size: 115%;
+    text-align: left;
+}
+body {
+    background-color: #ffffff;
+    /* color: #1c3c1c; */
+    margin: 0;
+}
+/* Wrapper div controls width of entire layout */
+#wrapper {
+    /* background-color: #e0d8c8; */
+    width: 55%;
+    min-width: 700px;
+    max-width: 1200px;
+    border: solid 1px #0f2c1a;
+    margin: 10px auto;
+    padding: 5px;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+}
+div {
+    margin: 0;
+    padding: 0;
+}
+img {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 120%;
+}
+/* Table styles */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+td {
+    padding: 10px;
+    border: 1px solid #0f2c1a;
+    text-align: center;
+}
+th {
+    padding: 10px;
+    border: 1px solid #0f2c1a;
+    text-align: left;
+    /* background-color: #d4c4a8; */
+    color: #0f2c1a;
+}
