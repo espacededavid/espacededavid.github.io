@@ -14,7 +14,29 @@
                 <h1><a href="index.htm">COURSE NOTES</a></h1>
                 <!--- Navigation bar -->
                 <nav>                
-                    
+                    <button type="button" id="searchBtn" class="btn" aria-label="Search">Search</button>
+                    <input type="text" id="searchInput" placeholder="Type to search..." style="display:none; margin-left:8px;" />
+                    <button type="button" id="goBtn" style="display:none;">Go</button>
+                    <script>
+                      const searchBtn = document.getElementById('searchBtn');
+                      const searchInput = document.getElementById('searchInput');
+                      const goBtn = document.getElementById('goBtn');
+                      searchBtn.onclick = function() {
+                        searchInput.style.display = 'inline-block';
+                        goBtn.style.display = 'inline-block';
+                        searchInput.focus();
+                      };
+                      goBtn.onclick = function() {
+                        if (searchInput.value.trim()) {
+                          alert('You searched for: ' + searchInput.value);
+                        }
+                      };
+                      searchInput.addEventListener('keydown', function(e) {
+                        if (e.key === 'Enter') {
+                          goBtn.click();
+                        }
+                      });
+                    </script>
                 </nav>
             </header>
             <!-- Start of main page content -->
